@@ -9,15 +9,15 @@ const logos = [
 
 const Clients = () => {
     return (
-        <section className="py-10 bg-white">
-            <div className="max-w-6xl mx-auto px-6">
-                <div className="flex justify-center items-center space-x-10 md:space-x-20">
+        <section className="py-10 bg-white w-full overflow-hidden">
+            <div className="w-full max-w-7xl mx-auto px-6">
+                <div className="flex flex-wrap justify-center items-center gap-6 md:gap-14 w-full">
                     {logos.map((logo) => (
                         <img
                             key={logo.id}
                             src={logo.src}
                             alt={logo.alt}
-                            className="h-16 md:h-24 grayscale transition-transform duration-300 hover:scale-110"
+                            className="h-16 md:h-24 w-auto max-w-full grayscale transition-transform duration-300 hover:scale-110"
                         />
                     ))}
                 </div>

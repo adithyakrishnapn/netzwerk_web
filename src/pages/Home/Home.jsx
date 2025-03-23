@@ -197,15 +197,18 @@ const Home = () => {
 
 
             {/* Banner Section */}
-            <section className="py-20 flex justify-center items-center">
-                <div className="bg-[#256EEE] text-white py-10 px-6 md:px-16 text-center w-[80%] rounded-3xl flex flex-col md:flex-row items-center justify-between shadow-lg">
+            <section className="py-16 px-6 flex justify-center items-center w-full">
+                <div className="bg-[#256EEE] text-white py-12 px-6 md:px-16 text-center w-full max-w-4xl rounded-3xl flex flex-col md:flex-row items-center justify-between shadow-lg">
 
                     {/* Left Text Section */}
-                    <div className="w-full md:w-[50%] px-6 md:text-left text-center">
-                        <h2 className="text-3xl md:text-4xl font-semibold leading-snug">
+                    <div className="w-full md:w-[55%] px-6 md:text-left text-center">
+                        <h2 className="text-3xl md:text-4xl font-semibold leading-snug md:leading-tight">
                             Ready to build your team’s dream Web App?
                         </h2>
-                        <div className="mt-6">
+                        <p className="text-lg text-gray-200 mt-3 md:mt-4">
+                            Let's turn your ideas into reality with expert development.
+                        </p>
+                        <div className="mt-6 flex justify-center md:justify-start">
                             <a href="#" className="bg-black text-white px-6 py-3 rounded-full inline-block hover:bg-gray-800 transition duration-300">
                                 Get started
                             </a>
@@ -213,13 +216,17 @@ const Home = () => {
                     </div>
 
                     {/* Right Image Section */}
-                    <div className="w-full md:w-[40%] flex justify-center mt-10 md:mt-0">
-                        <img src="/Images/favicon.png" alt="Project Illustration"
-                            className="max-w-[80%] md:max-w-full h-auto py-6 transition-transform duration-300 hover:scale-105" />
+                    <div className="w-full md:w-[40%] flex justify-center mt-8 md:mt-0">
+                        <img
+                            src="/Images/favicon.png"
+                            alt="Project Illustration"
+                            className="w-32 md:w-48 h-auto py-6 transition-transform duration-300 hover:scale-105"
+                        />
                     </div>
 
                 </div>
             </section>
+
 
 
             {/* Footer */}
